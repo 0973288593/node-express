@@ -1,0 +1,18 @@
+<h1>restaurants</h1>
+<ul class="restaurants">
+
+
+    {{#each restaurants}}
+    
+       <li class = "restaurants-item">
+           {{!--{{this.imageURL}}ใช้ดึงลิ้งรูปภาพในไฟล์ data.js ที่ ImageURL (this. = คำสั้งในการดังค่าของตัวแปลที่จะกำหนดไว้) --}}
+           <img src="{{this.ImageURL}}"class="restaurants-item-imge">  
+           <div class = "restaurants-item-name">{{this.name}}</div>
+            <small class = "restaurants-item-type">{{this.Type}}</small>
+
+       </li> 
+       
+
+    {{/each}}
+    <hr/>
+</ul>
